@@ -1,5 +1,5 @@
 # PIC32MZ-EF-Starter-Kit
-# day 1: flash led by while loop
-# day 2: print debug info by using serial port
-# day 3: flash led by using timer2 interrupt
-# day 4: usb intro, usb interrupt, etc.
+# my_led: flash led by while loop
+# my_uart: print debug info by using serial port
+# flash_led_timer: flash led by using timer2 interrupt
+# usb_intro: usb intro, usb interrupt, etc.
