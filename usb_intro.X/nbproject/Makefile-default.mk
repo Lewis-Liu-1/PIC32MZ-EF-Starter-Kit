@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=usb/usb_main.c usb/usb_serial.c configure_bits.c timer2.c main.c state_machine.c uart.c leds.c usb/debug.c
+SOURCEFILES_QUOTED_IF_SPACED=usb/usb_serial.c configure_bits.c timer2.c main.c state_machine.c uart.c leds.c debug.c terminal.c usb/usb_basic.c usb/usb_events.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/usb/usb_main.o ${OBJECTDIR}/usb/usb_serial.o ${OBJECTDIR}/configure_bits.o ${OBJECTDIR}/timer2.o ${OBJECTDIR}/main.o ${OBJECTDIR}/state_machine.o ${OBJECTDIR}/uart.o ${OBJECTDIR}/leds.o ${OBJECTDIR}/usb/debug.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/usb/usb_main.o.d ${OBJECTDIR}/usb/usb_serial.o.d ${OBJECTDIR}/configure_bits.o.d ${OBJECTDIR}/timer2.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/state_machine.o.d ${OBJECTDIR}/uart.o.d ${OBJECTDIR}/leds.o.d ${OBJECTDIR}/usb/debug.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/usb/usb_serial.o ${OBJECTDIR}/configure_bits.o ${OBJECTDIR}/timer2.o ${OBJECTDIR}/main.o ${OBJECTDIR}/state_machine.o ${OBJECTDIR}/uart.o ${OBJECTDIR}/leds.o ${OBJECTDIR}/debug.o ${OBJECTDIR}/terminal.o ${OBJECTDIR}/usb/usb_basic.o ${OBJECTDIR}/usb/usb_events.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/usb/usb_serial.o.d ${OBJECTDIR}/configure_bits.o.d ${OBJECTDIR}/timer2.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/state_machine.o.d ${OBJECTDIR}/uart.o.d ${OBJECTDIR}/leds.o.d ${OBJECTDIR}/debug.o.d ${OBJECTDIR}/terminal.o.d ${OBJECTDIR}/usb/usb_basic.o.d ${OBJECTDIR}/usb/usb_events.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/usb/usb_main.o ${OBJECTDIR}/usb/usb_serial.o ${OBJECTDIR}/configure_bits.o ${OBJECTDIR}/timer2.o ${OBJECTDIR}/main.o ${OBJECTDIR}/state_machine.o ${OBJECTDIR}/uart.o ${OBJECTDIR}/leds.o ${OBJECTDIR}/usb/debug.o
+OBJECTFILES=${OBJECTDIR}/usb/usb_serial.o ${OBJECTDIR}/configure_bits.o ${OBJECTDIR}/timer2.o ${OBJECTDIR}/main.o ${OBJECTDIR}/state_machine.o ${OBJECTDIR}/uart.o ${OBJECTDIR}/leds.o ${OBJECTDIR}/debug.o ${OBJECTDIR}/terminal.o ${OBJECTDIR}/usb/usb_basic.o ${OBJECTDIR}/usb/usb_events.o
 
 # Source Files
-SOURCEFILES=usb/usb_main.c usb/usb_serial.c configure_bits.c timer2.c main.c state_machine.c uart.c leds.c usb/debug.c
+SOURCEFILES=usb/usb_serial.c configure_bits.c timer2.c main.c state_machine.c uart.c leds.c debug.c terminal.c usb/usb_basic.c usb/usb_events.c
 
 
 CFLAGS=
@@ -106,12 +106,6 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/usb/usb_main.o: usb/usb_main.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/usb" 
-	@${RM} ${OBJECTDIR}/usb/usb_main.o.d 
-	@${RM} ${OBJECTDIR}/usb/usb_main.o 
-	@${FIXDEPS} "${OBJECTDIR}/usb/usb_main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/usb/usb_main.o.d" -o ${OBJECTDIR}/usb/usb_main.o usb/usb_main.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
-	
 ${OBJECTDIR}/usb/usb_serial.o: usb/usb_serial.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/usb" 
 	@${RM} ${OBJECTDIR}/usb/usb_serial.o.d 
@@ -154,19 +148,31 @@ ${OBJECTDIR}/leds.o: leds.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/leds.o 
 	@${FIXDEPS} "${OBJECTDIR}/leds.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/leds.o.d" -o ${OBJECTDIR}/leds.o leds.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
 	
-${OBJECTDIR}/usb/debug.o: usb/debug.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/debug.o: debug.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/debug.o.d 
+	@${RM} ${OBJECTDIR}/debug.o 
+	@${FIXDEPS} "${OBJECTDIR}/debug.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/debug.o.d" -o ${OBJECTDIR}/debug.o debug.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/terminal.o: terminal.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/terminal.o.d 
+	@${RM} ${OBJECTDIR}/terminal.o 
+	@${FIXDEPS} "${OBJECTDIR}/terminal.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/terminal.o.d" -o ${OBJECTDIR}/terminal.o terminal.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/usb/usb_basic.o: usb/usb_basic.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/usb" 
-	@${RM} ${OBJECTDIR}/usb/debug.o.d 
-	@${RM} ${OBJECTDIR}/usb/debug.o 
-	@${FIXDEPS} "${OBJECTDIR}/usb/debug.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/usb/debug.o.d" -o ${OBJECTDIR}/usb/debug.o usb/debug.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
+	@${RM} ${OBJECTDIR}/usb/usb_basic.o.d 
+	@${RM} ${OBJECTDIR}/usb/usb_basic.o 
+	@${FIXDEPS} "${OBJECTDIR}/usb/usb_basic.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/usb/usb_basic.o.d" -o ${OBJECTDIR}/usb/usb_basic.o usb/usb_basic.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/usb/usb_events.o: usb/usb_events.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/usb" 
+	@${RM} ${OBJECTDIR}/usb/usb_events.o.d 
+	@${RM} ${OBJECTDIR}/usb/usb_events.o 
+	@${FIXDEPS} "${OBJECTDIR}/usb/usb_events.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/usb/usb_events.o.d" -o ${OBJECTDIR}/usb/usb_events.o usb/usb_events.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
 	
 else
-${OBJECTDIR}/usb/usb_main.o: usb/usb_main.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/usb" 
-	@${RM} ${OBJECTDIR}/usb/usb_main.o.d 
-	@${RM} ${OBJECTDIR}/usb/usb_main.o 
-	@${FIXDEPS} "${OBJECTDIR}/usb/usb_main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/usb/usb_main.o.d" -o ${OBJECTDIR}/usb/usb_main.o usb/usb_main.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
-	
 ${OBJECTDIR}/usb/usb_serial.o: usb/usb_serial.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/usb" 
 	@${RM} ${OBJECTDIR}/usb/usb_serial.o.d 
@@ -209,11 +215,29 @@ ${OBJECTDIR}/leds.o: leds.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/leds.o 
 	@${FIXDEPS} "${OBJECTDIR}/leds.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/leds.o.d" -o ${OBJECTDIR}/leds.o leds.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
 	
-${OBJECTDIR}/usb/debug.o: usb/debug.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/debug.o: debug.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/debug.o.d 
+	@${RM} ${OBJECTDIR}/debug.o 
+	@${FIXDEPS} "${OBJECTDIR}/debug.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/debug.o.d" -o ${OBJECTDIR}/debug.o debug.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/terminal.o: terminal.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/terminal.o.d 
+	@${RM} ${OBJECTDIR}/terminal.o 
+	@${FIXDEPS} "${OBJECTDIR}/terminal.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/terminal.o.d" -o ${OBJECTDIR}/terminal.o terminal.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/usb/usb_basic.o: usb/usb_basic.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/usb" 
-	@${RM} ${OBJECTDIR}/usb/debug.o.d 
-	@${RM} ${OBJECTDIR}/usb/debug.o 
-	@${FIXDEPS} "${OBJECTDIR}/usb/debug.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/usb/debug.o.d" -o ${OBJECTDIR}/usb/debug.o usb/debug.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
+	@${RM} ${OBJECTDIR}/usb/usb_basic.o.d 
+	@${RM} ${OBJECTDIR}/usb/usb_basic.o 
+	@${FIXDEPS} "${OBJECTDIR}/usb/usb_basic.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/usb/usb_basic.o.d" -o ${OBJECTDIR}/usb/usb_basic.o usb/usb_basic.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/usb/usb_events.o: usb/usb_events.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/usb" 
+	@${RM} ${OBJECTDIR}/usb/usb_events.o.d 
+	@${RM} ${OBJECTDIR}/usb/usb_events.o 
+	@${FIXDEPS} "${OBJECTDIR}/usb/usb_events.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/usb/usb_events.o.d" -o ${OBJECTDIR}/usb/usb_events.o usb/usb_events.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
 	
 endif
 

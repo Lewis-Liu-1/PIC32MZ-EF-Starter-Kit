@@ -4,7 +4,6 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>global.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -14,9 +13,11 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="f1" displayName="usb" projectFiles="true">
-        <itemPath>usb/usb_main.c</itemPath>
         <itemPath>usb/usb_serial.c</itemPath>
         <itemPath>usb/usb_serial.h</itemPath>
+        <itemPath>usb/usb.h</itemPath>
+        <itemPath>usb/usb_basic.c</itemPath>
+        <itemPath>usb/usb_events.c</itemPath>
       </logicalFolder>
       <itemPath>configure_bits.c</itemPath>
       <itemPath>timer2.c</itemPath>
@@ -24,7 +25,9 @@
       <itemPath>state_machine.c</itemPath>
       <itemPath>uart.c</itemPath>
       <itemPath>leds.c</itemPath>
-      <itemPath>usb/debug.c</itemPath>
+      <itemPath>debug.c</itemPath>
+      <itemPath>debug.h</itemPath>
+      <itemPath>terminal.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
