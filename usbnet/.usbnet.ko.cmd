@@ -1,0 +1,1 @@
+cmd_/home/lyl/MPLABXProjects/usbnet/usbnet.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -T ./scripts/module-common.lds  --build-id  -o /home/lyl/MPLABXProjects/usbnet/usbnet.ko /home/lyl/MPLABXProjects/usbnet/usbnet.o /home/lyl/MPLABXProjects/usbnet/usbnet.mod.o ;  true

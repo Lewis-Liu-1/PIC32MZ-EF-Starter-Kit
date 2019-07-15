@@ -1,0 +1,573 @@
+
+Frame 399: 64 bytes on wire (512 bits), 64 bytes captured (512 bits) on interface 0
+USB URB
+    [Source: host]
+    [Destination: 1.16.0]
+    URB id: 0xffff93d3f97466c0
+    URB type: URB_SUBMIT ('S')
+    URB transfer type: URB_CONTROL (0x02)
+    Endpoint: 0x80, Direction: IN
+    Device: 16
+    URB bus id: 1
+    Device setup request: relevant (0)
+    Data: not present ('<')
+    URB sec: 1563017961
+    URB usec: 19980
+    URB status: Operation now in progress (-EINPROGRESS) (-115)
+    URB length [bytes]: 18
+    Data length [bytes]: 0
+    [Response in: 400]
+    Interval: 0
+    Start frame: 0
+    Copy of Transfer Flags: 0x00000200
+    Number of ISO descriptors: 0
+URB setup
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x00
+    bDescriptorType: 0x01
+    Language Id: no language specified (0x0000)
+    wLength: 18
+
+Frame 400: 82 bytes on wire (656 bits), 82 bytes captured (656 bits) on interface 0
+USB URB
+    [Source: 1.16.0]
+    [Destination: host]
+    URB id: 0xffff93d3f97466c0
+    URB type: URB_COMPLETE ('C')
+    URB transfer type: URB_CONTROL (0x02)
+    Endpoint: 0x80, Direction: IN
+    Device: 16
+    URB bus id: 1
+    Device setup request: not relevant ('-')
+    Data: present (0)
+    URB sec: 1563017961
+    URB usec: 20394
+    URB status: Success (0)
+    URB length [bytes]: 18
+    Data length [bytes]: 18
+    [Request in: 399]
+    [Time from request: 0.000414000 seconds]
+    Unused Setup Header
+    Interval: 0
+    Start frame: 0
+    Copy of Transfer Flags: 0x00000200
+    Number of ISO descriptors: 0
+DEVICE DESCRIPTOR
+    bLength: 18
+    bDescriptorType: 0x01 (DEVICE)
+    bcdUSB: 0x0200
+    bDeviceClass: Device (0x00)
+    bDeviceSubClass: 0
+    bDeviceProtocol: 0 (Use class code info from Interface Descriptors)
+    bMaxPacketSize0: 64
+    idVendor: Sierra Wireless, Inc. (0x1199)
+    idProduct: MC8700 Modem (0x68a3)
+    bcdDevice: 0x0006
+    iManufacturer: 3
+    iProduct: 2
+    iSerialNumber: 0
+    bNumConfigurations: 1
+
+Frame 401: 64 bytes on wire (512 bits), 64 bytes captured (512 bits) on interface 0
+USB URB
+    [Source: host]
+    [Destination: 1.16.0]
+    URB id: 0xffff93d3f97466c0
+    URB type: URB_SUBMIT ('S')
+    URB transfer type: URB_CONTROL (0x02)
+    Endpoint: 0x80, Direction: IN
+    Device: 16
+    URB bus id: 1
+    Device setup request: relevant (0)
+    Data: not present ('<')
+    URB sec: 1563017961
+    URB usec: 20412
+    URB status: Operation now in progress (-EINPROGRESS) (-115)
+    URB length [bytes]: 9
+    Data length [bytes]: 0
+    [Response in: 402]
+    Interval: 0
+    Start frame: 0
+    Copy of Transfer Flags: 0x00000200
+    Number of ISO descriptors: 0
+URB setup
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x00
+    bDescriptorType: 0x02
+    Language Id: no language specified (0x0000)
+    wLength: 9
+
+Frame 402: 73 bytes on wire (584 bits), 73 bytes captured (584 bits) on interface 0
+USB URB
+    [Source: 1.16.0]
+    [Destination: host]
+    URB id: 0xffff93d3f97466c0
+    URB type: URB_COMPLETE ('C')
+    URB transfer type: URB_CONTROL (0x02)
+    Endpoint: 0x80, Direction: IN
+    Device: 16
+    URB bus id: 1
+    Device setup request: not relevant ('-')
+    Data: present (0)
+    URB sec: 1563017961
+    URB usec: 20855
+    URB status: Success (0)
+    URB length [bytes]: 9
+    Data length [bytes]: 9
+    [Request in: 401]
+    [Time from request: 0.000443000 seconds]
+    Unused Setup Header
+    Interval: 0
+    Start frame: 0
+    Copy of Transfer Flags: 0x00000200
+    Number of ISO descriptors: 0
+CONFIGURATION DESCRIPTOR
+    bLength: 9
+    bDescriptorType: 0x02 (CONFIGURATION)
+    wTotalLength: 168
+    bNumInterfaces: 6
+    bConfigurationValue: 1
+    iConfiguration: 1
+    Configuration bmAttributes: 0xe0  SELF-POWERED  REMOTE-WAKEUP
+    bMaxPower: 0  (0mA)
+
+
+Frame 403: 64 bytes on wire (512 bits), 64 bytes captured (512 bits) on interface 0
+USB URB
+    [Source: host]
+    [Destination: 1.16.0]
+    URB id: 0xffff93d3f9746480
+    URB type: URB_SUBMIT ('S')
+    URB transfer type: URB_CONTROL (0x02)
+    Endpoint: 0x80, Direction: IN
+    Device: 16
+    URB bus id: 1
+    Device setup request: relevant (0)
+    Data: not present ('<')
+    URB sec: 1563017961
+    URB usec: 20883
+    URB status: Operation now in progress (-EINPROGRESS) (-115)
+    URB length [bytes]: 168
+    Data length [bytes]: 0
+    [Response in: 404]
+    Interval: 0
+    Start frame: 0
+    Copy of Transfer Flags: 0x00000200
+    Number of ISO descriptors: 0
+URB setup
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x00
+    bDescriptorType: 0x02
+    Language Id: no language specified (0x0000)
+    wLength: 168
+
+
+Frame 404: 232 bytes on wire (1856 bits), 232 bytes captured (1856 bits) on interface 0
+USB URB
+    [Source: 1.16.0]
+    [Destination: host]
+    URB id: 0xffff93d3f9746480
+    URB type: URB_COMPLETE ('C')
+    URB transfer type: URB_CONTROL (0x02)
+    Endpoint: 0x80, Direction: IN
+    Device: 16
+    URB bus id: 1
+    Device setup request: not relevant ('-')
+    Data: present (0)
+    URB sec: 1563017961
+    URB usec: 21288
+    URB status: Success (0)
+    URB length [bytes]: 168
+    Data length [bytes]: 168
+    [Request in: 403]
+    [Time from request: 0.000405000 seconds]
+    Unused Setup Header
+    Interval: 0
+    Start frame: 0
+    Copy of Transfer Flags: 0x00000200
+    Number of ISO descriptors: 0
+CONFIGURATION DESCRIPTOR
+    bLength: 9
+    bDescriptorType: 0x02 (CONFIGURATION)
+    wTotalLength: 168
+    bNumInterfaces: 6
+    bConfigurationValue: 1
+    iConfiguration: 1
+    Configuration bmAttributes: 0xe0  SELF-POWERED  REMOTE-WAKEUP
+    bMaxPower: 0  (0mA)
+INTERFACE DESCRIPTOR (0.0): class Vendor Specific
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 0
+    bAlternateSetting: 0
+    bNumEndpoints: 2
+    bInterfaceClass: Vendor Specific (0xff)
+    bInterfaceSubClass: 0xff
+    bInterfaceProtocol: 0xff
+    iInterface: 0
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x81  IN  Endpoint:1
+    bmAttributes: 0x02
+    wMaxPacketSize: 512
+    bInterval: 32
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x01  OUT  Endpoint:1
+    bmAttributes: 0x02
+    wMaxPacketSize: 512
+    bInterval: 32
+INTERFACE DESCRIPTOR (1.0): class Vendor Specific
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 1
+    bAlternateSetting: 0
+    bNumEndpoints: 2
+    bInterfaceClass: Vendor Specific (0xff)
+    bInterfaceSubClass: 0xff
+    bInterfaceProtocol: 0xff
+    iInterface: 0
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x82  IN  Endpoint:2
+    bmAttributes: 0x02
+    wMaxPacketSize: 512
+    bInterval: 32
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x02  OUT  Endpoint:2
+    bmAttributes: 0x02
+    wMaxPacketSize: 512
+    bInterval: 32
+INTERFACE DESCRIPTOR (2.0): class Vendor Specific
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 2
+    bAlternateSetting: 0
+    bNumEndpoints: 2
+    bInterfaceClass: Vendor Specific (0xff)
+    bInterfaceSubClass: 0xff
+    bInterfaceProtocol: 0xff
+    iInterface: 0
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x83  IN  Endpoint:3
+    bmAttributes: 0x02
+    wMaxPacketSize: 512
+    bInterval: 32
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x03  OUT  Endpoint:3
+    bmAttributes: 0x02
+    wMaxPacketSize: 512
+    bInterval: 32
+INTERFACE DESCRIPTOR (3.0): class Vendor Specific
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 3
+    bAlternateSetting: 0
+    bNumEndpoints: 3
+    bInterfaceClass: Vendor Specific (0xff)
+    bInterfaceSubClass: 0xff
+    bInterfaceProtocol: 0xff
+    iInterface: 0
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x84  IN  Endpoint:4
+    bmAttributes: 0x03
+    wMaxPacketSize: 64
+    bInterval: 5
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x85  IN  Endpoint:5
+    bmAttributes: 0x02
+    wMaxPacketSize: 512
+    bInterval: 32
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x04  OUT  Endpoint:4
+    bmAttributes: 0x02
+    wMaxPacketSize: 512
+    bInterval: 32
+INTERFACE DESCRIPTOR (4.0): class Vendor Specific
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 4
+    bAlternateSetting: 0
+    bNumEndpoints: 3
+    bInterfaceClass: Vendor Specific (0xff)
+    bInterfaceSubClass: 0xff
+    bInterfaceProtocol: 0xff
+    iInterface: 0
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x86  IN  Endpoint:6
+    bmAttributes: 0x03
+    wMaxPacketSize: 64
+    bInterval: 5
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x87  IN  Endpoint:7
+    bmAttributes: 0x02
+    wMaxPacketSize: 512
+    bInterval: 32
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x05  OUT  Endpoint:5
+    bmAttributes: 0x02
+    wMaxPacketSize: 512
+    bInterval: 32
+INTERFACE DESCRIPTOR (7.0): class Vendor Specific
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 7
+    bAlternateSetting: 0
+    bNumEndpoints: 3
+    bInterfaceClass: Vendor Specific (0xff)
+    bInterfaceSubClass: 0xff
+    bInterfaceProtocol: 0xff
+    iInterface: 0
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x88  IN  Endpoint:8
+    bmAttributes: 0x03
+    wMaxPacketSize: 64
+    bInterval: 5
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x89  IN  Endpoint:9
+    bmAttributes: 0x02
+    wMaxPacketSize: 512
+    bInterval: 32
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x06  OUT  Endpoint:6
+    bmAttributes: 0x02
+    wMaxPacketSize: 512
+    bInterval: 32
+
+
+Frame 405: 64 bytes on wire (512 bits), 64 bytes captured (512 bits) on interface 0
+USB URB
+    [Source: host]
+    [Destination: 1.16.0]
+    URB id: 0xffff93d3f9746d80
+    URB type: URB_SUBMIT ('S')
+    URB transfer type: URB_CONTROL (0x02)
+    Endpoint: 0x80, Direction: IN
+    Device: 16
+    URB bus id: 1
+    Device setup request: relevant (0)
+    Data: not present ('<')
+    URB sec: 1563017961
+    URB usec: 21327
+    URB status: Operation now in progress (-EINPROGRESS) (-115)
+    URB length [bytes]: 255
+    Data length [bytes]: 0
+    [Response in: 406]
+    Interval: 0
+    Start frame: 0
+    Copy of Transfer Flags: 0x00000200
+    Number of ISO descriptors: 0
+URB setup
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x00
+    bDescriptorType: 0x03
+    Language Id: no language specified (0x0000)
+    wLength: 255
+
+
+Frame 420: 64 bytes on wire (512 bits), 64 bytes captured (512 bits) on interface 0
+USB URB
+    [Source: host]
+    [Destination: 1.16.0]
+    URB id: 0xffff93d3f9746a80
+    URB type: URB_SUBMIT ('S')
+    URB transfer type: URB_CONTROL (0x02)
+    Endpoint: 0x00, Direction: OUT
+    Device: 16
+    URB bus id: 1
+    Device setup request: relevant (0)
+    Data: present (0)
+    URB sec: 1563017961
+    URB usec: 30387
+    URB status: Operation now in progress (-EINPROGRESS) (-115)
+    URB length [bytes]: 0
+    Data length [bytes]: 0
+    [Response in: 421]
+    Interval: 0
+    Start frame: 0
+    Copy of Transfer Flags: 0x00000000
+    Number of ISO descriptors: 0
+URB setup
+    bmRequestType: 0x00
+    bRequest: SET CONFIGURATION (9)
+    bConfigurationValue: 1
+    wIndex: 0 (0x0000)
+    wLength: 0
+
+
+Frame 422: 64 bytes on wire (512 bits), 64 bytes captured (512 bits) on interface 0
+USB URB
+    [Source: host]
+    [Destination: 1.16.0]
+    URB id: 0xffff93d3f9746a80
+    URB type: URB_SUBMIT ('S')
+    URB transfer type: URB_CONTROL (0x02)
+    Endpoint: 0x80, Direction: IN
+    Device: 16
+    URB bus id: 1
+    Device setup request: relevant (0)
+    Data: not present ('<')
+    URB sec: 1563017961
+    URB usec: 31676
+    URB status: Operation now in progress (-EINPROGRESS) (-115)
+    URB length [bytes]: 255
+    Data length [bytes]: 0
+    [Response in: 423]
+    Interval: 0
+    Start frame: 0
+    Copy of Transfer Flags: 0x00000200
+    Number of ISO descriptors: 0
+URB setup
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x01
+    bDescriptorType: 0x03
+    Language Id: English (United States) (0x0409)
+    wLength: 255
+
+Frame 423: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+USB URB
+    [Source: 1.16.0]
+    [Destination: host]
+    URB id: 0xffff93d3f9746a80
+    URB type: URB_COMPLETE ('C')
+    URB transfer type: URB_CONTROL (0x02)
+    Endpoint: 0x80, Direction: IN
+    Device: 16
+    URB bus id: 1
+    Device setup request: not relevant ('-')
+    Data: present (0)
+    URB sec: 1563017961
+    URB usec: 32070
+    URB status: Success (0)
+    URB length [bytes]: 42
+    Data length [bytes]: 42
+    [Request in: 422]
+    [Time from request: 0.000394000 seconds]
+    Unused Setup Header
+    Interval: 0
+    Start frame: 0
+    Copy of Transfer Flags: 0x00000200
+    Number of ISO descriptors: 0
+STRING DESCRIPTOR
+    bLength: 42
+    bDescriptorType: 0x03 (STRING)
+    bString: Sierra Configuration
+
+
+Frame 551: 64 bytes on wire (512 bits), 64 bytes captured (512 bits) on interface 0
+USB URB
+    [Source: host]
+    [Destination: 1.16.0]
+    URB id: 0xffff93d3f7e16a80
+    URB type: URB_SUBMIT ('S')
+    URB transfer type: URB_CONTROL (0x02)
+    Endpoint: 0x00, Direction: OUT
+    Device: 16
+    URB bus id: 1
+    Device setup request: relevant (0)
+    Data: present (0)
+    URB sec: 1563017961
+    URB usec: 165857
+    URB status: Operation now in progress (-EINPROGRESS) (-115)
+    URB length [bytes]: 0
+    Data length [bytes]: 0
+    [Response in: 552]
+    Interval: 0
+    Start frame: 0
+    Copy of Transfer Flags: 0x00000000
+    Number of ISO descriptors: 0
+URB setup
+    bmRequestType: 0x40
+    bRequest: 0
+    wValue: 0x0000
+    wIndex: 0 (0x0000)
+    wLength: 0
+
+
+Frame 569: 64 bytes on wire (512 bits), 64 bytes captured (512 bits) on interface 0
+USB URB
+    [Source: host]
+    [Destination: 1.16.0]
+    URB id: 0xffff93d3b50fa300
+    URB type: URB_SUBMIT ('S')
+    URB transfer type: URB_CONTROL (0x02)
+    Endpoint: 0x80, Direction: IN
+    Device: 16
+    URB bus id: 1
+    Device setup request: relevant (0)
+    Data: not present ('<')
+    URB sec: 1563017961
+    URB usec: 192394
+    URB status: Operation now in progress (-EINPROGRESS) (-115)
+    URB length [bytes]: 2
+    Data length [bytes]: 0
+    [Response in: 570]
+    Interval: 0
+    Start frame: 0
+    Copy of Transfer Flags: 0x00000200
+    Number of ISO descriptors: 0
+URB setup
+    bmRequestType: 0xc0
+    bRequest: 6
+    wValue: 0x0000
+    wIndex: 0 (0x0000)
+    wLength: 2
+
+
+Frame 570: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+USB URB
+    [Source: 1.16.0]
+    [Destination: host]
+    URB id: 0xffff93d3b50fa300
+    URB type: URB_COMPLETE ('C')
+    URB transfer type: URB_CONTROL (0x02)
+    Endpoint: 0x80, Direction: IN
+    Device: 16
+    URB bus id: 1
+    Device setup request: not relevant ('-')
+    Data: present (0)
+    URB sec: 1563017961
+    URB usec: 192828
+    URB status: Success (0)
+    URB length [bytes]: 2
+    Data length [bytes]: 2
+    [Request in: 569]
+    [Time from request: 0.000434000 seconds]
+    Unused Setup Header
+    Interval: 0
+    Start frame: 0
+    Copy of Transfer Flags: 0x00000200
+    Number of ISO descriptors: 0
+CONTROL response data: 0700

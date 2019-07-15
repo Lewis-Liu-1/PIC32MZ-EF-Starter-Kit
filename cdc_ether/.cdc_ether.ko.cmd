@@ -1,0 +1,1 @@
+cmd_/home/lyl/MPLABXProjects/cdc_ether/cdc_ether.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -T ./scripts/module-common.lds  --build-id  -o /home/lyl/MPLABXProjects/cdc_ether/cdc_ether.ko /home/lyl/MPLABXProjects/cdc_ether/cdc_ether.o /home/lyl/MPLABXProjects/cdc_ether/cdc_ether.mod.o ;  true
