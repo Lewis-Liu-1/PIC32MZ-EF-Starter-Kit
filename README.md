@@ -12,3 +12,9 @@ usb cdc acm enumerate as /dev/ttyACM1
 
 # usb baremetal mini2400 host
 http://www.pudn.com/Download/item/id/2037357.html
+
+#ref virtual serial port
+https://www.st.com/en/development-tools/stsw-stm32102.html
+#ref windows 10 not showing stlink as virtual serial port
+https://community.st.com/s/question/0D50X00009XkXrSSAV/st-link-v2-virtual-com-port-driver-not-working-on-windows-10
+
