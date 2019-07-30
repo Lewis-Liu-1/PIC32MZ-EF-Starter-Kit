@@ -18,3 +18,5 @@ https://www.st.com/en/development-tools/stsw-stm32102.html
 #ref windows 10 not showing stlink as virtual serial port
 https://community.st.com/s/question/0D50X00009XkXrSSAV/st-link-v2-virtual-com-port-driver-not-working-on-windows-10
 
+stm32 serial port printing explained in this video
+https://www.youtube.com/watch?v=nieOpDR7kBs
