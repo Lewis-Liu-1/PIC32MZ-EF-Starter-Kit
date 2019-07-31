@@ -21,5 +21,12 @@ https://community.st.com/s/question/0D50X00009XkXrSSAV/st-link-v2-virtual-com-po
 stm32 serial port printing explained in this video
 https://www.youtube.com/watch?v=nieOpDR7kBs
 
-stm32 serial port 
+stm32 serial port
+
 https://www.youtube.com/watch?v=IdKx4oWNJfw
+
+stm32 Timer
+
+https://www.youtube.com/watch?v=Ql6klWiROik
+
+
