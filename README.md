@@ -29,4 +29,5 @@ stm32 Timer
 
 https://www.youtube.com/watch?v=Ql6klWiROik
 
-
+battery and pwm control current
+http://mouser.eetrend.com/content/2017/100006280.html
