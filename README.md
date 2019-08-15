@@ -40,3 +40,7 @@ https://circuitdigest.com/article/an-overview-of-li-ion-batteries
 
 why PWM
 https://electronics.stackexchange.com/questions/70129/topology-of-solar-pwm-charger
+
+https://core.ac.uk/download/pdf/82727780.pdf
+https://blog.csdn.net/stoic163/article/details/72652101
+
