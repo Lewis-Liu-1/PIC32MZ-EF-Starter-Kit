@@ -31,3 +31,6 @@ https://www.youtube.com/watch?v=Ql6klWiROik
 
 battery and pwm control current
 http://mouser.eetrend.com/content/2017/100006280.html
+
+battery charging cc,cv mode
+https://circuitdigest.com/microcontroller-projects/two-step-lithium-battery-charger-circuit-with-cc-cv-mode
