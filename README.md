@@ -37,3 +37,6 @@ https://circuitdigest.com/microcontroller-projects/two-step-lithium-battery-char
 
 about battery
 https://circuitdigest.com/article/an-overview-of-li-ion-batteries
+
+why PWM
+https://electronics.stackexchange.com/questions/70129/topology-of-solar-pwm-charger
