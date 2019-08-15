@@ -34,3 +34,6 @@ http://mouser.eetrend.com/content/2017/100006280.html
 
 battery charging cc,cv mode
 https://circuitdigest.com/microcontroller-projects/two-step-lithium-battery-charger-circuit-with-cc-cv-mode
+
+about battery
+https://circuitdigest.com/article/an-overview-of-li-ion-batteries
