@@ -48,3 +48,5 @@ battery charging basics
 https://www.powerstream.com/NiMH.htm
 
 
+https://batteryuniversity.com/learn/article/charging_nickel_metal_hydride
+
