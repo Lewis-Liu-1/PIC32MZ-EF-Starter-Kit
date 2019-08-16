@@ -44,3 +44,7 @@ https://electronics.stackexchange.com/questions/70129/topology-of-solar-pwm-char
 https://core.ac.uk/download/pdf/82727780.pdf
 https://blog.csdn.net/stoic163/article/details/72652101
 
+battery charging basics
+https://www.powerstream.com/NiMH.htm
+
+
