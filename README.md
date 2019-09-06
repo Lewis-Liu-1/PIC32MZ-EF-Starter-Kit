@@ -47,6 +47,10 @@ https://blog.csdn.net/stoic163/article/details/72652101
 battery charging basics
 https://www.powerstream.com/NiMH.htm
 
-
+git tutorial
 https://batteryuniversity.com/learn/article/charging_nickel_metal_hydride
+source tree tutorial
+https://confluence.atlassian.com/get-started-with-sourcetree
 
+
+https://datasift.github.io/gitflow/IntroducingGitFlow.html
