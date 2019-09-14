@@ -54,3 +54,7 @@ https://confluence.atlassian.com/get-started-with-sourcetree
 
 
 https://datasift.github.io/gitflow/IntroducingGitFlow.html
+
+MAC, RMII, MII, PHY relations
+https://blog.csdn.net/hahajinbu/article/details/52174259
+
